@@ -10,7 +10,8 @@ from colorama import Fore, init, Style
 from termcolor import colored
 from tabulate import tabulate
 import subprocess
-import pkg_resources
+import importlib.metadata
+version = importlib.metadata.version("main.py")
 from telethon.sync import TelegramClient
 from telethon.errors import SessionPasswordNeededError, PhoneNumberInvalidError
 
